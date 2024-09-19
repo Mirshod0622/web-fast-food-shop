@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drinks Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Category Buttons -->
+    <div class="categories">
+        <button onclick="showCategory('fastfood')">Fast Food</button>
+        <button onclick="showCategory('drinks')">Suv</button>
+        <button onclick="showCategory('food')">Ovqat</button>
+        <button onclick="showCategory('desserts')">Shirinlik</button>
+    </div>
+
+    <!-- Item Cards for Fast Food Category -->
+    <div class="items-container" id="fastfood">
+
+             <!-- Burger -->
+        <div class="item-card">
+            <img src="fastfood/bigger.jpg" alt="Burger">
+            <p>Burger · 30000 so'm</p>
+            <button onclick="decreasePrice(30000, 'burger')">-</button>
+            <input type="number" id="burger" value="0" readonly>
+            <button onclick="increasePrice(30000, 'burger')">+</button>
+            <p>Narxi: <span id="price_burger">0</span> so'm</p>
+        </div>
+             <!-- Pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza hawaian.jpg" alt="Pizza">
+            <p>Pizza · 60000 so'm</p>
+            <button onclick="decreasePrice(60000, 'pizza')">-</button>
+            <input type="number" id="pizza" value="0" readonly>
+            <button onclick="increasePrice(60000, 'pizza')">+</button>
+            <p>Narxi: <span id="price_pizza">0</span> so'm</p>
+        </div>
+             <!-- Chees burger -->
+        <div class="item-card">
+            <img src="fastfood/cheesburger.jpg" alt="Chees Burger">
+            <p>Chees Burger · 40000 so'm</p>
+            <button onclick="decreasePrice(40000, 'cheesburger')">-</button>
+            <input type="number" id="cheesburger" value="0" readonly>
+            <button onclick="increasePrice(40000, 'cheesburger')">+</button>
+            <p>Narxi: <span id="price_cheesburger">0</span> so'm</p>
+        </div>
+             <!-- Chicken burger -->
+        <div class="item-card">
+            <img src="fastfood/chicky burger.jpg" alt="Chicken Burger">
+            <p>Chicken Burger · 35000 so'm</p>
+            <button onclick="decreasePrice(35000, 'chickenburger')">-</button>
+            <input type="number" id="chickenburger" value="0" readonly>
+            <button onclick="increasePrice(35000, 'chickenburger')">+</button>
+            <p>Narxi: <span id="price_chickenburger">0</span> so'm</p>
+        </div>
+            <!-- Big burger -->
+        <div class="item-card">
+            <img src="fastfood/join burger.jpg" alt="Big Burger">
+            <p>Big Burger · 45000 so'm</p>
+            <button onclick="decreasePrice(45000, 'bigburger')">-</button>
+            <input type="number" id="bigburger" value="0" readonly>
+            <button onclick="increasePrice(45000, 'bigburger')">+</button>
+            <p>Narxi: <span id="price_bigburger">0</span> so'm</p>
+        </div>
+            <!-- Mix pizza -->
+        <div class="item-card">
+            <img src="fastfood/mix pizza.jpg" alt="Mix Pizza">
+            <p>Mix Pizza · 65000 so'm</p>
+            <button onclick="decreasePrice(65000, 'mixpizza')">-</button>
+            <input type="number" id="mixpizza" value="0" readonly>
+            <button onclick="increasePrice(65000, 'mixpizza')">+</button>
+            <p>Narxi: <span id="price_mixpizza">0</span> so'm</p>
+        </div>
+            <!-- Chicken pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza chikken.jpg" alt="Chicken Pizza">
+            <p>Chicken Pizza · 75000 so'm</p>
+            <button onclick="decreasePrice(75000, 'chickenpizza')">-</button>
+            <input type="number" id="chickenpizza" value="0" readonly>
+            <button onclick="increasePrice(75000, 'chickenpizza')">+</button>
+            <p>Narxi: <span id="price_chickenpizza">0</span> so'm</p>
+        </div>
+            <!-- Margarita pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza margarita.jpg" alt="Margarita Pizza">
+            <p>Margarita Pizza · 75000 so'm</p>
+            <button onclick="decreasePrice(75000, 'margaritapizza')">-</button>
+            <input type="number" id="margaritapizza" value="0" readonly>
+            <button onclick="increasePrice(75000, 'margaritapizza')">+</button>
+            <p>Narxi: <span id="price_margaritapizza">0</span> so'm</p>
+        </div>
+                <!-- Peperona pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza peperoni.jpg" alt="Peperona Pizza">
+            <p>Peperona Pizza · 85000 so'm</p>
+            <button onclick="decreasePrice(85000, 'peperonapizza')">-</button>
+            <input type="number" id="peperonapizza" value="0" readonly>
+            <button onclick="increasePrice(85000, 'peperonapizza')">+</button>
+            <p>Narxi: <span id="price_peperonapizza">0</span> so'm</p>
+        </div>
+        <!-- Kombo pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza spick.jpg" alt="Kombo Pizza">
+            <p>Kombo Pizza · 70000 so'm</p>
+            <button onclick="decreasePrice(70000, 'kombopizza')">-</button>
+            <input type="number" id="kombopizza" value="0" readonly>
+            <button onclick="increasePrice(70000, 'kombopizza')">+</button>
+            <p>Narxi: <span id="price_kombopizza">0</span> so'm</p>
+        </div>
+            <!-- Steak pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza spick.jpg" alt="Steak Pizza">
+            <p>Steak Pizza · 60000 so'm</p>
+            <button onclick="decreasePrice(60000, 'steakpizza')">-</button>
+            <input type="number" id="steakpizza" value="0" readonly>
+            <button onclick="increasePrice(60000, 'steakpizza')">+</button>
+            <p>Narxi: <span id="price_steakpizza">0</span> so'm</p>
+        </div>
+                <!-- Chicken pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza chikken.jpg" alt="Chees Pizza">
+            <p>Chees Pizza · 50000 so'm</p>
+            <button onclick="decreasePrice(50000, 'cheespizza')">-</button>
+            <input type="number" id="cheespizza" value="0" readonly>
+            <button onclick="increasePrice(50000, 'cheespizza')">+</button>
+            <p>Narxi: <span id="price_cheespizza">0</span> so'm</p>
+        </div>
+             <!-- Super pizza -->
+        <div class="item-card">
+            <img src="fastfood/pizza supreme.jpg" alt="Super Pizza">
+            <p>Super Pizza · 45000 so'm</p>
+            <button onclick="decreasePrice(45000, 'superpizza')">-</button>
+            <input type="number" id="superpizza" value="0" readonly>
+            <button onclick="increasePrice(45000, 'superpizza')">+</button>
+            <p>Narxi: <span id="price_superpizza">0</span> so'm</p>
+        </div>
+             <!-- Lavash chili  -->
+            <div class="item-card">
+                <img src="fastfood/lavash_qalampir_govajiy_22_01.png" alt="Lavash Chili">
+                <p>Lavash Chili · 25000 so'm</p>
+                <button onclick="decreasePrice(25000, 'lavashchili')">-</button>
+                <input type="number" id="lavashchili" value="0" readonly>
+                <button onclick="increasePrice(25000, 'lavashchili')">+</button>
+                <p>Narxi: <span id="price_lavashchili">0</span> so'm</p>
+            </div>
+
+                <!-- Lavash  -->
+            <div class="item-card">
+                    <img src="fastfood/lavash_standart_govajiy_22_01.png" alt="Lavash">
+                    <p>Lavash · 25000 so'm</p>
+                    <button onclick="decreasePrice(25000, 'lavash')">-</button>
+                    <input type="number" id="lavash" value="0" readonly>
+                    <button onclick="increasePrice(25000, 'lavash')">+</button>
+                    <p>Narxi: <span id="price_lavash">0</span> so'm</p>
+            </div>
+                <!-- Lavash Mini  -->
+            <div class="item-card">
+                    <img src="fastfood/lavash_sir_kuriniy_mini_22_01.png" alt="Lavash Mini">
+                    <p>Lavash Mini · 20000 so'm</p>
+                    <button onclick="decreasePrice(20000, 'lavashmini')">-</button>
+                    <input type="number" id="lavashmini" value="0" readonly>
+                    <button onclick="increasePrice(20000, 'lavashmini')">+</button>
+                    <p>Narxi: <span id="price_lavashmini">0</span> so'm</p>
+            </div>
+                <!-- Lavash Mini  -->
+            <div class="item-card">
+                <img src="fastfood/lavash_standart_kuriniy_22_01.png" alt="Lavash Chicken">
+                <p>Lavash Chicken · 28000 so'm</p>
+                <button onclick="decreasePrice(28000, 'lavashchicken')">-</button>
+                <input type="number" id="lavashchicken" value="0" readonly>
+                <button onclick="increasePrice(28000, 'lavashchicken')">+</button>
+                <p>Narxi: <span id="price_lavashchicken">0</span> so'm</p>
+            </div>   
+             <!-- Non kabob  -->
+            <div class="item-card">
+                <img src="fastfood/shaurma mol.png" alt="Non kabob">
+                <p>Non kabob · 20000 so'm</p>
+                <button onclick="decreasePrice(20000, 'nonkabob')">-</button>
+                <input type="number" id="nonkabob" value="0" readonly>
+                <button onclick="increasePrice(20000, 'nonkabob')">+</button>
+                <p>Narxi: <span id="price_nonkabob">0</span> so'm</p>
+            </div>   
+               <!-- Non kabob chicken -->
+               <div class="item-card">
+                <img src="fastfood/shaurma tovuq.png" alt="Non kabob Chicken">
+                <p>Non kabob Chicken · 25000 so'm</p>
+                <button onclick="decreasePrice(25000, 'nonkabobchicken')">-</button>
+                <input type="number" id="nonkabobchicken" value="0" readonly>
+                <button onclick="increasePrice(25000, 'nonkabobchicken')">+</button>
+                <p>Narxi: <span id="price_nonkabobchicken">0</span> so'm</p>
+            </div>   
+             <!-- Non kabob chili -->
+             <div class="item-card">
+                <img src="fastfood/shaurma mol.png" alt="Non kabob Chili">
+                <p>Non kabob Chili · 27000 so'm</p>
+                <button onclick="decreasePrice(27000, 'nonkabobchili')">-</button>
+                <input type="number" id="nonkabobchili" value="0" readonly>
+                <button onclick="increasePrice(27000, 'nonkabobchili')">+</button>
+                <p>Narxi: <span id="price_nonkabobchili">0</span> so'm</p>
+            </div>   
+             <!-- hot-dog -->
+             <div class="item-card">
+                <img src="fastfood/xod mini.png" alt="Hot-Dog">
+                <p>Hot-Dog · 18000 so'm</p>
+                <button onclick="decreasePrice(18000, 'hotdog')">-</button>
+                <input type="number" id="hotdog" value="0" readonly>
+                <button onclick="increasePrice(18000, 'hotdog')">+</button>
+                <p>Narxi: <span id="price_hotdog">0</span> so'm</p>
+            </div>   
+              <!--big hot-dog -->
+              <div class="item-card">
+                <img src="fastfood/dabl xod.png" alt="Big Hot-Dog">
+                <p>Big Hot-Dog · 25000 so'm</p>
+                <button onclick="decreasePrice(25000, 'bighotdog')">-</button>
+                <input type="number" id="bighotdog" value="0" readonly>
+                <button onclick="increasePrice(25000, 'bighotdog')">+</button>
+                <p>Narxi: <span id="price_bighotdog">0</span> so'm</p>
+            </div> 
+    </div>
+
+    <!-- Item Cards for Drinks Category -->
+    <div class="items-container" id="drinks" style="display:none;">
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Coca Cola">
+            <p>Coca Cola · 10000 so'm</p>
+            <button onclick="decreasePrice(10000, 'cola')">-</button>
+            <input type="number" id="cola" value="0" readonly>
+            <button onclick="increasePrice(10000, 'cola')">+</button>
+            <p>Narxi: <span id="price_cola">0</span> so'm</p>
+        </div>
+
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Fanta">
+            <p>Fanta · 10000 so'm</p>
+            <button onclick="decreasePrice(10000, 'fanta')">-</button>
+            <input type="number" id="fanta" value="0" readonly>
+            <button onclick="increasePrice(10000, 'fanta')">+</button>
+            <p>Narxi: <span id="price_fanta">0</span> so'm</p>
+        </div>
+    </div>
+
+    <!-- Item Cards for Food Category -->
+    <div class="items-container" id="food" style="display:none;">
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Plov">
+            <p>Plov · 35000 so'm</p>
+            <button onclick="decreasePrice(35000, 'plov')">-</button>
+            <input type="number" id="plov" value="0" readonly>
+            <button onclick="increasePrice(35000, 'plov')">+</button>
+            <p>Narxi: <span id="price_plov">0</span> so'm</p>
+        </div>
+
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Sho'rva">
+            <p>Sho'rva · 30000 so'm</p>
+            <button onclick="decreasePrice(30000, 'shorva')">-</button>
+            <input type="number" id="shorva" value="0" readonly>
+            <button onclick="increasePrice(30000, 'shorva')">+</button>
+            <p>Narxi: <span id="price_shorva">0</span> so'm</p>
+        </div>
+    </div>
+
+    <!-- Item Cards for Desserts Category -->
+    <div class="items-container" id="desserts" style="display:none;">
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Ice Cream">
+            <p>Ice Cream · 15000 so'm</p>
+            <button onclick="decreasePrice(15000, 'icecream')">-</button>
+            <input type="number" id="icecream" value="0" readonly>
+            <button onclick="increasePrice(15000, 'icecream')">+</button>
+            <p>Narxi: <span id="price_icecream">0</span> so'm</p>
+        </div>
+
+        <div class="item-card">
+            <img src="https://via.placeholder.com/80" alt="Cake">
+            <p>Cake · 20000 so'm</p>
+            <button onclick="decreasePrice(20000, 'cake')">-</button>
+            <input type="number" id="cake" value="0" readonly>
+            <button onclick="increasePrice(20000, 'cake')">+</button>
+            <p>Narxi: <span id="price_cake">0</span> so'm</p>
+        </div>
+    </div>
+
+    <!-- Total -->
+    <p class="total" >Jami: <span id="totalAmount">0</span> so'm</p>
+    <button onclick="showReceipt()">To'lov</button>
+    
+    <!-- Receipt -->
+    <div id="receipt">
+        <h3>To'lov cheki:</h3>
+        <p id="receiptContent"></p>
+        <p>Jami: <span id="finalTotal">0</span> so'm</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
